@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity counter is 
+	generic ( tcount : natural := 60;
+				 n_bits : natural := 6);
+
+	port( clk : in std_logic;
+			en  : in std_logic;
+			rst : in std_logic;
+			tc	 : out std_logic;
+			output : out std_logic_vector (n_bits -1 downto 0) );	
+end counter
+
+architecture count of counter is 
+signal count : std_logic_vector (n_bits -1 downto 0) := (others => '0');
+
+begin 
+output <= count;
+process(clk)
+begin
+	if rising_edge(clk) then 
+		tc <= '0';
+		if rst = '1' then 
+			count <= (others => '0');
+		else if count = (tcount-1) then 
+			count <= (others => '0');
+			tc <= '0';
+		else if en = '1' then 
+			count <= count + '1';
+		end if;
+	end if;
+	
+end process;
+end count;
+		

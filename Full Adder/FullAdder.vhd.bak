@@ -1,0 +1,18 @@
+library IEEE; 
+use ieee.std_logic_1164.all;
+
+entity twobitadder is 
+port ( a,b,c,d : in std_logic;
+sum0, sum1, carry, Ca : out std_logic);
+end twobitadder
+
+architecture adder of twobitadder is 
+signal buffCa : std_logic;
+begin
+
+sum0 <= a xor b;
+sum1 <= c xor d xor buffCa;
+buffCa <= (a and b);
+carry <= (c and d) or (d and buffCa);
+Ca <= buffCa;
+end adder; 

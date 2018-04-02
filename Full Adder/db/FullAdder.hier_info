@@ -1,0 +1,18 @@
+|FullAdder
+a => sum0.IN0
+a => buffCa.IN0
+b => sum0.IN1
+b => buffCa.IN1
+c => sum1.IN0
+c => carry.IN0
+c => Y.DATAB
+d => sum1.IN1
+d => carry.IN1
+d => Y.DATAA
+sum0 <= sum0.DB_MAX_OUTPUT_PORT_TYPE
+sum1 <= sum1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+Ca <= buffCa.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
