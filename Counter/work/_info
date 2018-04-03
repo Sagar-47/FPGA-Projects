@@ -9,7 +9,7 @@ z2
 cModel Technology
 dH:/FPGA
 Ecounter
-Z0 w1522673340
+Z0 w1522752674
 Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -19,13 +19,13 @@ Z6 8H:/FPGA/Projects/Counter/counter.vhd
 Z7 FH:/FPGA/Projects/Counter/counter.vhd
 l0
 L5
-VSl=4njUEh1TY8c7=7?L7a1
-!s100 jPGPQa=c33>e=2bQCF5iY2
+VZ1zW9MRAOCL?EWoX0?8<h2
+!s100 <P^SH9ne:]f3]DM3U?D=X1
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1522673578
+Z9 !s110 1522753219
 !i10b 1
-Z10 !s108 1522673578.000000
+Z10 !s108 1522753219.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|H:/FPGA/Projects/Counter/counter.vhd|
 Z12 !s107 H:/FPGA/Projects/Counter/counter.vhd|
 !i113 1
@@ -36,11 +36,11 @@ R1
 R2
 R3
 R4
-Z15 DEx4 work 7 counter 0 22 Sl=4njUEh1TY8c7=7?L7a1
-l19
-L16
-Z16 VD?UZPJN1Nfz1ZD6hiWPJ`2
-Z17 !s100 AA7fF9aLBedFglVhTTW1>1
+DEx4 work 7 counter 0 22 Z1zW9MRAOCL?EWoX0?8<h2
+l20
+L17
+VJo[g`2MBLm[N<[<3^TMV;0
+!s100 8:7M@0Nbdk3RG8G_EJENn1
 R8
 32
 R9
