@@ -6,22 +6,28 @@ entity clock is
 	
 
 	port( CLK : in std_logic;  -- clock : counting at rising edge
---			en  : in std_logic;  -- enable : when high counting is on
+			en  : in std_logic;  -- enable : when high counting is on
 			srst : in std_logic;  -- reset : when high starts count from 0
---       tc	 : out std_logic; -- high when final count is reached 
-			output : out std_logic_vector (5 downto 0) );	
+         ds : in std_logic; -- high when final count is reached 
+			OUTPUT : out std_logic_vector (9 downto 0) );	
 end clock;
 
---architecture arch of counter is 
-
---begin 
+architecture arch of clock is 
+signal tc_count : std_logic := '0';
+begin 
 	
---	Prescaler : entity work.counter
---		PORT MAP ( clk => CLK,
-				--		rst => srst,
-			--			en => 1
-		--				);
-	--
+	Prescaler : entity work.counter
+	generic map ( tcount => 60,
+					  n_bits => 10)
+	PORT MAP ( clk => CLK,
+					rst => srst,
+					en => en,
+					ds => ds,
+					tc => tc_count,
+					output => OUTPUT);
+					
+end arch;
+	
 
 
 --end arch;
